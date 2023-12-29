@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit | Payment</title>
+    <link
+      rel="shortcut icon"
+      href="./img/Blinkit-yellow-rounded.svg.png"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/cartpage.css" />
+    <script
+      src="https://kit.fontawesome.com/60b736368c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./paymentPage.css" /> -->
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../products/products.css" />
+    <link rel="stylesheet" href="../style/signup(login).css" />
+    <link rel="stylesheet" href="./paymentPage.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="cartinhtm"></div>
+    <div id="payment-page-container">
+        <div class="row col-12 justify-content-center">
+        <div id="paymentBox" class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-5">
+            <span class="checkout-step-name" id="payment-title">Payment</span>
+            <div id="checkoutBox">
+                <div id="payment-invoice-box">
+                    <div id="payment-invoice">
+                        <div class="payment-invoice-row">
+                            <div class="float-left" id="total-amount-text">Total Amount</div>
+                            <div class="float-right" id="total-amount-value"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="payment-invoice-row">
+                            <div class="float-left text-dark-gray">
+                                Amount Payable 
+                                <span class="font-size-small">(incl. of all taxes)</span>
+                            </div>
+                            <div class="float-right text-dark-gray" id="payable-amount-value"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div id="payment-container">
+                        <ul id="payment-method-box">
+                            <li class="payment-method-row" id="wallet" onclick="payByWallet()">Wallet</li>
+                            <li class="payment-method-row" id="upi" onclick="payByUpi()">UPI</li>
+                            <li class="payment-method-row" id="card" onclick="payByCard()">Card</li>
+                            <li class="payment-method-row" id="cash" onclick="payByCash()">Cash</li>
+                            <li class="payment-method-row" id="netbanking" onclick="payByNetbanking()">NetBanking</li>
+                        </ul>
+                        <div id="wallet-container">
+                            <div class="d-flex align-content-center">
+                                    <input type="radio" name="pay" id="paytm" checked>
+                                <label for="paytm" class="ms-3">
+                                    <img src="https://cdn.grofers.com/app/uploads/payments/paytm.png" alt="" srcset="">
+                                    <span class="ms-2">Paytm</span>
+                                </label>
+
+                            </div>
+                            <div class="d-flex align-content-center">
+                                    <input type="radio" name="pay" id="mobi">
+                                <label for="mobi" class="ms-3">
+                                    <img src="https://cdn.grofers.com/app/uploads/payments/mobikwik.png" alt="" srcset="">
+                                    <span class="ms-2">Mobikwik</span>
+                                </label>
+                            </div>
+                            <button class="pay-now-btn" id="wallet-pay-btn" onclick="payNowByWallet()">Pay Now</button>
+                        </div>
+                        <div id="cash-container">
+                            <div id="cashBox">
+                                <img src="https://blinkit.com/cc72fec9a6bddfb5de6d.png" alt="">
+                            </div>
+                            <div>
+                                <div id="payment-desc">
+                                    Please pay 
+                                    <span id="text-dark"></span>
+                                    to the delivery executive when your order is delivered
+                                </div>
+                                <div>
+                                    <div id="payment-desc-seperator">or</div>
+                                    <div id="payment-desc2">
+                                        <div>
+                                            Pay using 
+                                            <b>Paytm/Mobikwik</b>
+                                            at the time of delivery
+                                        </div>
+                                        <img class="paytm-mob-logo" src="https://cdn.grofers.com/app/uploads/payments/paytm.png" alt="paytm-logo">
+                                        <img class="paytm-mob-logo" src="https://cdn.grofers.com/app/uploads/payments/mobikwik.png" alt="mobikwik-logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="cash-place-order-btn" onclick="orderPlaced()">Place Order</button>
+                        </div>
+                        <div id="card-container">
+                            <div>Accepted cards
+                                <div id="card-image-div">
+                                    <img src="https://www.nicepng.com/png/detail/392-3926074_credit-or-debit-card-visa-mastercard-logo-hd.png" alt="card1">
+                                    <img src="https://thumbs.dreamstime.com/z/orange-credit-card-8479683.jpg" alt="card2">
+                                </div>
+                            </div>
+                            <div id="card-details-div">
+                                <div id="card-number-div">
+                                    <label for="cardNumber">Card Number</label><br>
+                                    <input class="card-input" id="cardNumber" type="number" maxlength="19" placeholder="Card Number">
+                                </div>
+                                <div id="card-expiry-cvv-div">
+                                    <div id="card-expiry-div">
+                                        <label for="valid">Valid Through</label>
+                                        <div>
+                                            <input class="card-input" id="month" type="number" maxlength="2" id="" placeholder="MM">
+                                            <input class="card-input" id="year" type="number" maxlength="2" id="" placeholder="YY">
+                                        </div>
+                                    </div>
+                                    <div id="cvv-div">
+                                        <label for="cvv">CVV</label><br>
+                                        <input class="card-input" type="number" id="cvv" maxlength="4">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="pay-now-btn" id="card-pay-btn" onclick="payNow()">Pay Now</button>
+                        </div>
+                        <div id="upi-container">
+                            <div>UPI ID</div>
+                            <div id="upi-id-box">
+                                <input type="text" id="upi-input" placeholder="Enter UPI ID">
+                                <button id="upi-verify-btn">verify</button>
+                            </div>
+                            <button class="pay-now-btn" id="upi-pay-btn" onclick="payNowUPI()">Pay Now</button>
+                        </div>
+                        <div id="netBanking-container">
+                            <div>
+                                <div id="all-bank-text">All Banks</div>
+                                <div>
+                                    <select name="" id="select-bank-tag">
+                                        <option value="">Select Bank</option>
+                                        <option value="airtelBank">Airte Payments Bank</option>
+                                        <option value="axisBank">Axis Bank</option>
+                                        <option value="BOI">Bank Of India</option>
+                                        <option value="caneraBAnk">Canera Bank</option>
+                                        <option value="HDFC">HDFC</option>
+                                        <option value="ICICI">ICICI Bank</option>
+                                        <option value="kotakBank">Kotak Mahindra Bank</option>
+                                        <option value="PNB">Punjab National Bank</option>
+                                        <option value="SBI">State Bank Of India</option>
+                                        <option value="UBI">Union Bank Of India</option>
+                                        <option value="yesBank">Yes Bank</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="direct-bank-select-box">
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/hdfc_thumbnail.png" alt="hdfc-logo">
+                                </div>
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/icici_thumbnail.png" alt="icici-logo">
+                                </div>
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/sbi_thumbnail.png" alt="sbi-logo">
+                                </div>
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/ic_pnb.png" alt="pnb-logo">
+                                </div>
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/axis_thumbnail.png" alt="axis-logo">
+                                </div>
+                                <div class="bank-select-div">
+                                    <input type="radio" name="bank">
+                                    <img src="https://cdn.grofers.com/app/uploads/banks/icons/kotak_thumbnail.png" alt="kotak-logo">
+                                </div>
+                            </div>
+                            <button class="pay-now-btn" id="netBanking-pay-btn" onclick="payNowByNetbank()">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cartBox-pk" class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div>
+                <div id="addres-btn" class="topmGrayRedius">
+                    <button id="address-btn2">Select Delivery Address</button>
+                </div>
+                <div id="address-container" class="topmGrayRedius">
+                    <span class="checkout-step-name">Delivery Address</span>
+                    <div id="selected-address">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+                <div id="checkout-cart-box">
+                    <span id="checkout-cart-title">My Cart</span>
+                    <span class="float-right" id="no-of-items"></span>
+                    <div class="clear"></div>
+                </div>
+                <div id="cart-item-container-pk">
+                    
+                </div>
+            </div> -->
+            <div id="cartItems">
+                <div class="d-flex justify-content-between bg-muted p-3">
+                    <h6 class="text-muted">My Cart</h6>
+                    <h6 id="total-items" class="text-muted"></h6>
+                </div>
+                <div id="cartItemslist" class="px3">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="map-modal_container">
+        <div id="map-modal">
+            <div id="map-container">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            id="gmap_canvas" 
+                            src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="address-form">
+                <div id="text-cancel">
+                    <h3>Enter complete address</h3>
+                    <button onclick="cancelMapModal()" id="cancelMapModal">&#215;</button>
+                </div>
+                <div class="text-color">
+                    This allow us to find you easily and give you timely delivery experience
+                </div>
+                <div id="inputField">
+                    <input class="input-tag" oninput="getMap()" id="place" type="text" placeholder="City">
+                    <input class="input-tag" type="text" id="flate" placeholder="Flate/House/Office No.">
+                    <input class="input-tag" type="text" id="street" placeholder="Street/Society/Office Name">
+                    <input class="input-tag" type="number" id="pincode" placeholder="Pincode">
+                </div>
+                <div class="text-color">Save address as</div>
+                <div id="select-tag-div">
+                    <select name="" id="address-as">
+                        <option value="">Select</option>
+                        <option value="Home">Home</option>
+                        <option value="Work">Work</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="save-address-div">
+                    <button id="save-address-btn" onclick="saveAddress()">Save Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order_placed_modal_container">
+        <div id="gif_modal">
+            <div id="cancel-modal-div">
+            <div><button onclick="cancelGifModal()" id="cancel-gif-modal">&#215;</button></div>
+            </div>
+            <div id="gif-div">
+                <img src="https://cdn.dribbble.com/users/2015153/screenshots/7442124/media/97681cd6ef4e896e8df157b1d1bdca06.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="footerindex"></div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="back()">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./thank-you-2.gif" alt="" srcset="">
+          <div>
+            <h5>Your Order is Succefully placed!</h5>
+            <h5>Will be delivered within 20 min</h5>
+            <h5>Have a Good Day !</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="paymentPage.js"></script>
+<script src="..//Scripts/payment jsmodule.js" type="module"></script>

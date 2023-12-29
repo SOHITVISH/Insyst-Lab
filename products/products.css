@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#topProd {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+#topProd img {
+    width: 100%;
+}
+
+/* img{
+    width: 100%;
+} */
+#offer {
+    width: 90%;
+    margin: auto;
+    overflow-x: scroll;
+    gap: 2rem;
+    scrollbar-width: thin;
+}
+
+.offerchildImg {
+    width: 300px;
+}
+
+.offerchild {
+    width: 30rem;
+}
+
+/* ::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+    appearance: none;
+} */
+.w-20_per {
+    position: relative;
+}
+
+button>span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+
+
+
+@media (min-width:1200px) {
+
+    #carouselExampleControls,
+    #dairyCarousal1,
+    #dairyCarousal {
+        display: block
+    }
+
+    .w-20_per {
+        width: 15%;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .w-20_per:hover {
+        border: 0.5px solid green;
+    }
+
+    #couroSlider,
+    #couroSlider1,
+    #couroSlider2 {
+        display: none;
+    }
+
+    .pay_part {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 10px;
+    }
+
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    #topProd {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .pay_part {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    #carouselExampleControls,
+    #dairyCarousal1,
+    #dairyCarousal {
+        display: none
+    }
+
+    .w-20_per {
+        width: 15%;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .w-20_per:hover {
+        border: 0.5px solid green;
+    }
+
+    #couroSlider,
+    #couroSlider1,
+    #couroSlider2 {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        overflow-x: scroll;
+        gap: 2rem;
+        scrollbar-width: thin
+    }
+
+    .s_child {
+        width: 15rem;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .s_child>img {
+        width: 150px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    #topProd {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .pay_part {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    #carouselExampleControls,
+    #dairyCarousal1,
+    #dairyCarousal {
+        display: none
+    }
+
+    .w-20_per {
+        width: 15%;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .w-20_per:hover {
+        border: 0.5px solid green;
+    }
+
+    #couroSlider,
+    #couroSlider1,
+    #couroSlider2 {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        overflow-x: scroll;
+        gap: 2rem;
+        /* scrollbar-width: thin */
+    }
+
+    .s_child {
+        width: 15rem;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .s_child>img {
+        width: 150px;
+    }
+}
+
+@media (min-width:401px) and (max-width:699px) {
+    .imgdiv {
+        display: none;
+    }
+
+    #topProd {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .br10px {
+        border-radius: 10px;
+    }
+
+    .w-20_per {
+        width: 15%;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        ;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .w-20_per:hover {
+        border: 0.5px solid green;
+    }
+
+    #couroSlider,
+    #couroSlider1,
+    #couroSlider2 {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        overflow-x: scroll;
+        gap: 2rem;
+        scrollbar-width: thin
+    }
+
+    .s_child {
+        width: 15rem;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .s_child>img {
+        width: 150px;
+    }
+
+    #carouselExampleControls,
+    #dairyCarousal1,
+    #dairyCarousal {
+        display: none
+    }
+
+    .pay_part {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+@media (max-width:400px) {
+    .pay_part {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .imgdiv {
+        display: none;
+    }
+
+    #topProd {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .br10px {
+        border-radius: 10px;
+    }
+
+    .w-20_per {
+        width: 15%;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        ;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .w-20_per:hover {
+        border: 0.5px solid green;
+    }
+
+    #couroSlider,
+    #couroSlider1,
+    #couroSlider2 {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        overflow-x: scroll;
+        gap: 2rem;
+        scrollbar-width: thin
+    }
+
+    .s_child {
+        width: 15rem;
+        display: inline-block;
+        margin: auto 0.5rem;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .s_child>img {
+        width: 150px;
+    }
+
+    #carouselExampleControls,
+    #dairyCarousal1,
+    #dairyCarousal {
+        display: none
+    }
+
+
+
+}
+
+
+
+.w-20_per>img {
+    height: 130px;
+    width: 130px;
+    margin: auto 18px;
+}
+
+.w-20_per>p {
+    font-size: 14px;
+    color: black;
+    text-align: justify;
+}
+
+small {
+    font-size: 12px;
+}
+
+.bVEkMr {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    padding: 1px 8px;
+    background-color: rgb(37, 111, 239);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 12px;
+}
+
+.carousel-inner {
+    width: 90%;
+    margin: auto;
+}
+
+#carouselExampleControls>button {
+    width: auto !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgb(48, 54, 54);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.btn-outline-success:hover {
+    color: white !important;
+}
+
+.btn-outline-success {
+    width: 7rem !important;
+    height: 2.5rem;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#dairyCarousal {
+    width: 100%;
+}
+
+#dairyCarousal>button {
+    width: auto !important;
+}
+
+#dairyCarousal>span {
+    background-color: rgb(146, 146, 146);
+    ;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#dairyCarousal1 {
+    width: 100%;
+}
+
+#dairyCarousal1>button {
+    width: auto !important;
+}
+
+#dairyCarousal1>span {
+    background-color: rgb(146, 146, 146);
+    ;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.addonchangeclick {
+    background-color: rgb(236, 255, 236);
+    /* padding: 8px 30px; */
+    padding-top: 5px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid green;
+    margin-top: -5px;
+    border-radius: 10px;
+    color: green;
+    cursor: pointer;
+
+}
+
+.addonchangeclick>h5 {
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.addqtybuttons {
+    /* width: 100%; */
+    padding-top: 5px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid green;
+    margin-top: -5px;
+    border-radius: 10px;
+    color: green;
+    cursor: pointer;
+    color: white;
+    padding: 2px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    background-color: green;
+}
+
+.addqtybuttons>span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#pan {
+    width: 90%;
+    margin: auto;
+}
+
+/* code footer  */
+.footer {
+    width: 90%;
+    margin: auto;
+}
+
+.h-500 {
+    height: 500px;
+    width: 50%;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.h-360 {
+    height: 360px;
+    width: 40%;
+    position: absolute;
+    left: 187px;
+}
+
+.imgdiv {
+    position: relative;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.scanner {
+    width: 80%;
+}
+
+.codediv {
+    background-color: rgb(226 249 226);
+    display: flex !important;
+    align-items: center !important;
+}
+
+.w-40 {
+    width: 35%;
+}
+
+.pay_part div {
+    width: 100%;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+}
+
+.down_app>img {
+    width: 25%;
+    height: 35px;
+}
+
+.down_app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i {
+    font-size: 32px;
+}
+
+.s_span {
+    color: white;
+    height: 44px;
+    width: 44px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px 8px;
+    background-color: black;
+}
+
+.child_footer {
+    width: 88%;
+    margin: 40px auto;
+}
+
+.child_footer>div {
+    display: flex;
+    justify-content: center !important;
+}
+
+.child_footer>div>div {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 15px;
+    width: 275px;
+    height: 275px;
+    border-radius: 13px;
+    padding-top: 35px;
+    margin: 10px;
+}
+
+.child_footer h5 {
+    font-size: 14px;
+}
+
+.child_footer>div>div>div {
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    ;
+}
+
+section {
+    border-radius: 15px;
+    background-color: rgb(236, 255, 236);
+}
+
+.last-foot {
+    width: 90%;
+    margin: auto;
+
+}
+
+.bg {
+    background-color: rgb(252, 252, 252);
+    max-width: 100%;
+}
+
+.da {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.iaioDw {
+    width: 90%;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 24px auto;
+}
+
+
+.h-360 {
+    animation: animation ease-in-out 3s infinite;
+}
+
+@keyframes animation {
+    from {
+        margin-right: 100px;
+    }
+
+    to {
+        margin-left: 100px;
+    }
+}
+
+.row:before {
+    display: table;
+    content: none;
+}
+
+@media (max-width:480px) {
+    .child_footer>div {
+        display: block;
+    }
+}
+@media (min-width:900px) {
+    #carouselExampleInterval img{
+        height: 80vh;
+    }
+}
+
+/* #carouselExampleInterval img{
+    height: 75vh;
+} */
+#carouselExampleInterval .carousel-inner{
+   width: auto !important;
+}
+#carouselExampleInterval button{
+   width: 10px;
+}
+#carouselExampleInterval{
+    width: 89%;
+    margin: 2rem auto;
+}
