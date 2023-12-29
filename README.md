@@ -4,7 +4,7 @@
 <a name="readme-top"></a>
 <br />
 <div align="center">
-  <a href="https://github.com/CartikKG/Blinkit">
+  <a>
     <img src="./img/Untitled-1.jpg" alt="logo" width="100" height="50">
   </a>
 
@@ -13,7 +13,7 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/CartikKG/Blinkit"><strong>Explore the docs »</strong></a>
+    <a><strong>Explore the docs »</strong></a>
   </p>
 </div>
 
@@ -45,9 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-BlinkIt(formerly Grofers) is an online supermarket application to buy Fruits, Veggies, Snacks, Milk & more and get delivery safely & hygienically to your home.
+Insyst Lab is a Software development Organisation which develops this App (formerly Grofers) is an online supermarket application to buy Fruits, Veggies, Snacks, Milk & more and get delivery safely & hygienically to your home.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -63,8 +61,6 @@ BlinkIt(formerly Grofers) is an online supermarket application to buy Fruits, Ve
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-In this project we worked in group so we set up the the git repositary for transfer the code from one member to other
 
 ### Prerequisites
 
@@ -107,28 +103,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: ./img/Capture.PNG
-[HTML]: https://cdn-icons-png.flaticon.com/128/1051/1051277.png
-[Html-url]: https://www.tutorialspoint.com/html/html_tutorial.pdf
-[CSS]:https://cdn-icons-png.flaticon.com/128/5968/5968242.png
-[Css-url]: https://www.tutorialspoint.com/css/css_tutorial.pdf
-[js.js]: https://cdn-icons-png.flaticon.com/128/5968/5968292.png
-[js-url]: https://matfuvit.github.io/UVIT/predavanja/literatura/TutorialsPoint%20JavaScript.pdf
 
 
  
